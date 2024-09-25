@@ -1,6 +1,6 @@
 # requirements.txt
 flask
 transformers==4.26.1
-torch --index-url https://download.pytorch.org/whl/cpu
+torch
 sentencepiece
 sacremoses
