@@ -12,9 +12,9 @@ model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 def translate():
     data = request.json
     text = data.get('q')
-    source = data.get('source')
-    target = data.get('target')
-    format = data.get('format')
+    source = data.get('source', "en")
+    target = data.get('target', "eu")
+    format = data.get('format', "text")
     api_key = data.get('api_key')
     
     if not text:
