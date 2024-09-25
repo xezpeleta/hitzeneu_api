@@ -48,7 +48,7 @@ docker compose build
 docker compose up
 ```
 
-The API will be available at `http://localhost:5000`.
+The API will be available at `http://localhost:5000/translate`.
 
 
 ## Installation
@@ -74,4 +74,4 @@ Finally, start the server:
 python app.py
 ```
 
-The API will be available at `http://localhost:5000`.
+The API will be available at `http://localhost:5000/translate`.
