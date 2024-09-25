@@ -29,7 +29,7 @@ The API will return a JSON response with the translated text:
 Example using `curl`:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"q": "Hello, how are you?", "source": "en", "target": "eu"}' http://localhost:8000/translate
+curl -X POST -H "Content-Type: application/json" -d '{"q": "Hello, how are you?", "source": "en", "target": "eu"}' http://localhost:5000/translate
 ```
 
 ## Deployment with Docker (recommended)
