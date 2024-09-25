@@ -8,6 +8,10 @@ model_name = "HiTZ/mt-hitz-en-eu"
 tokenizer = MarianTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
+# Use GPU if available
+if torch.cuda.is_available():
+    model.to('cuda')
+
 @app.route('/translate', methods=['POST'])
 def translate():
     data = request.json
